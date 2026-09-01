@@ -13,22 +13,18 @@ def trim(im, toleranse=14):
     boks = diff.getbbox()
     return im.crop(boks) if boks else im
 
-def lag(src, dst, kutt=None, storleik=1000, luft=0.06):
+def lag(src, dst, kutt=None, storleik=1000, luft=0.05):
     im = Image.open(src).convert("RGB")
     if kutt:                                    # (topp, botn) i prosent — fjernar tekstbanner
         t, b = kutt
         im = im.crop((0, int(im.height*t), im.width, int(im.height*(1-b))))
     im = trim(im)
     bg = bakgrunnsfarge(im)
-    # kvadrat: beskjer den lange sida rundt midten, i staden for å leggje til stolpar
-    s = min(im.size)
-    x = (im.width - s)//2
-    y = (im.height - s)//2
-    im = im.crop((x, y, x+s, y+s))
-    # litt luft rundt, i same farge som bakgrunnen — ingen harde kvite stolpar
-    ramme = int(s*luft)
-    lerret = Image.new("RGB", (s+2*ramme, s+2*ramme), bg)
-    lerret.paste(im, (ramme, ramme))
+    # heile biletet blir med — vi fyller ut til kvadrat med bakgrunnsfargen frå
+    # biletet sjølv, så det ikkje blir harde kvite stolpar og ikkje zoomar inn
+    s = int(max(im.size) * (1 + 2*luft))
+    lerret = Image.new("RGB", (s, s), bg)
+    lerret.paste(im, ((s - im.width)//2, (s - im.height)//2))
     lerret.resize((storleik, storleik), Image.LANCZOS).save(dst, "WEBP", quality=90)
 
 JOBBAR = [

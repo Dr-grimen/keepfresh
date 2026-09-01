@@ -6,7 +6,7 @@ Alt innhald ligg i PRODUKT under. Endrar du pris eller tekst, endrar du her
 og køyrer skriptet på nytt — då blir alle sidene oppdaterte likt.
 """
 
-V = "5"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
+V = "6"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
 
 PRODUKT = [
     {

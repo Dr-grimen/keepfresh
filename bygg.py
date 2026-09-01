@@ -6,7 +6,7 @@ Alt innhald ligg i PRODUKT under. Endrar du pris eller tekst, endrar du her
 og køyrer skriptet på nytt — då blir alle sidene oppdaterte likt.
 """
 
-V = "4"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
+V = "5"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
 
 PRODUKT = [
     {
@@ -17,7 +17,6 @@ PRODUKT = [
         "pris": "$24.99",
         "bilete": [
             ("mini-1", "FreshSeal Mini Sealer in white, with its USB-C cable"),
-            ("mini-2", "Sealing a coffee bag with the Mini Sealer"),
             ("mini-3", "The Mini Sealer held on a fridge door by its magnet"),
             ("mini-4", "Cutter, sealer, magnetic base and charging port"),
         ],
@@ -105,7 +104,7 @@ PRODUKT = [
         "bilete": [
             ("duck-1", "FreshSeal Duck, a duck-shaped bag sealer"),
             ("duck-2", "The Duck resting on a kitchen table"),
-            ("duck-3", "Sealing a bag with the Duck"),
+            ("duck-3", "Sealing a snack bag with the Duck"),
         ],
         "bundlar": [
             ("1", "$24.99", None, None, "1 Duck"),

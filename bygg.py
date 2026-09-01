@@ -6,7 +6,15 @@ Alt innhald ligg i PRODUKT under. Endrar du pris eller tekst, endrar du her
 og køyrer skriptet på nytt — då blir alle sidene oppdaterte likt.
 """
 
-V = "6"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
+V = "7"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
+
+# Ekte Stripe Payment Links (konto: Store / FreshSeal).
+# Vil du leggje til 2- og 3-pakke, lag lenkene i Stripe og fyll dei inn her.
+STRIPE_LENKER = {
+    "mini-sealer": {"1": "https://buy.stripe.com/4gM3cvaQUewm38b9mxco000"},
+    "classic":     {"1": "https://buy.stripe.com/aFa28r5wAdsi5gj56hco001"},
+    "duck":        {"1": "https://buy.stripe.com/4gMeVd7EIdsigZ1fKVco002"},
+}
 
 PRODUKT = [
     {
@@ -20,11 +28,7 @@ PRODUKT = [
             ("mini-3", "The Mini Sealer held on a fridge door by its magnet"),
             ("mini-4", "Cutter, sealer, magnetic base and charging port"),
         ],
-        "bundlar": [
-            ("1", "$24.99", None, None, "1 Sealer"),
-            ("2", "$39.99", "$49.98", "Most popular", "2 Sealers"),
-            ("3", "$54.99", "$74.97", "Best value", "3 Sealers"),
-        ],
+        "bundlar": [("1", "$24.99", None, None, "1 Sealer")],
         "intro": "Not sure a mini sealer will actually earn a spot in your kitchen? We get it. "
                  "That's why your purchase is backed by our hassle-free return policy — if it "
                  "doesn't work for you, send it back, no hard feelings.",
@@ -66,11 +70,7 @@ PRODUKT = [
             ("classic-3", "Sealing a freezer bag of vegetables"),
             ("classic-4", "The Classic slipped into a coat pocket"),
         ],
-        "bundlar": [
-            ("1", "$24.99", None, None, "1 Sealer"),
-            ("2", "$39.99", "$49.98", "Most popular", "2 Sealers"),
-            ("3", "$54.99", "$74.97", "Best value", "3 Sealers"),
-        ],
+        "bundlar": [("1", "$24.99", None, None, "1 Sealer")],
         "intro": "The plain one. No charging, no extra functions — you press it along the bag and it "
                  "closes airtight. Over 100,000 people have bought this exact model, and it is the "
                  "most proven sealer we sell.",
@@ -106,11 +106,7 @@ PRODUKT = [
             ("duck-2", "The Duck resting on a kitchen table"),
             ("duck-3", "Sealing a snack bag with the Duck"),
         ],
-        "bundlar": [
-            ("1", "$24.99", None, None, "1 Duck"),
-            ("2", "$39.99", "$49.98", "Most popular", "2 Ducks"),
-            ("3", "$54.99", "$74.97", "Best value", "3 Ducks"),
-        ],
+        "bundlar": [("1", "$24.99", None, None, "1 Duck")],
         "intro": "It is a duck. It is also a perfectly good bag sealer with a cutter, a magnet and "
                  "USB charging. Both things are true at once, and that is the point.",
         "punkt": [
@@ -232,7 +228,7 @@ def produktside(p):
         f'      </article>\n' for tekst, kven in p["omtalar"])
 
     lenker = ",\n    ".join(
-        f'{pack}: "https://buy.stripe.com/{p["slug"].upper()}-{pack}-STK"'
+        f'{pack}: "{STRIPE_LENKER[p["slug"]][pack]}"'
         for pack, *_ in p["bundlar"])
 
     return hovud(f'{p["namn"]} | FreshSeal', p["teaser"]) + f"""

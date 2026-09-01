@@ -319,3 +319,66 @@ table.ship th { font-size: 12px; letter-spacing: 0.08em; text-transform: upperca
   .wrap { padding: 0 18px; }
   .nav a:nth-child(1) { display: none; }
 }
+
+/* ---------- promise / reviews ---------- */
+
+.promise {
+  border-top: 1px solid var(--line);
+  padding: 64px 0 80px;
+}
+
+.promise h2 {
+  font-size: 13px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.promise-grid h3 {
+  font-size: 17px;
+  margin: 0 0 8px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+
+.promise-grid p { color: var(--ink-soft); margin: 0; font-size: 15px; }
+
+.reviews-empty {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.reviews-empty p {
+  color: var(--ink-soft);
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.review {
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+}
+.review .stars { color: #c99a2e; letter-spacing: 2px; font-size: 14px; }
+.review h4 { margin: 8px 0 6px; font-size: 16px; font-weight: 600; }
+.review p { margin: 0 0 8px; color: var(--ink-soft); }
+.review .who { font-size: 13px; color: var(--ink-soft); }
+
+@media (max-width: 900px) {
+  .promise-grid { grid-template-columns: 1fr; gap: 28px; }
+  .promise { padding: 44px 0 56px; }
+}

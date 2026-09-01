@@ -61,7 +61,7 @@ PRODUKT = [
         "namn": "FreshSeal Classic",
         "kort": "Classic",
         "teaser": "Den enkle. Over 100 000 selde.",
-        "pris": "$17.99",
+        "pris": "$24.99",
         "bilete": [
             ("classic-1", "FreshSeal Classic in white"),
             ("classic-2", "Classic sealing a bag by hand"),
@@ -69,17 +69,17 @@ PRODUKT = [
             ("classic-4", "Classic slipped into a coat pocket"),
             ("classic-5", "Four examples of bags being sealed"),
         ],
-        "bundlar": [("1", "$17.99", None, None, "1 Sealer")],
+        "bundlar": [("1", "$24.99", None, None, "1 Sealer")],
         "intro": "The plain one. No charging, no extra functions — you press it along the bag and it "
                  "closes airtight. Over 100,000 people have bought this exact model, and it is the "
-                 "cheapest way into a sealed pantry.",
+                 "most proven sealer we sell.",
         "punkt": [
             "One squeeze and a slide, and the bag is sealed shut",
             "Runs on 2 AA batteries — ready the second it arrives (batteries not included)",
             "Small enough for a coat pocket or a drawer",
             "Nothing to charge, nothing to break",
         ],
-        "utro": "If you just want the job done for as little as possible, this is the one.",
+        "utro": "The same price as the rest of the range, and the one most people start with.",
         "stell": [
             "Wipe the sealing strip clean when it is cool — never rinse the unit",
             "Take the batteries out if you are storing it for a long time",
@@ -99,7 +99,7 @@ PRODUKT = [
         "namn": "FreshSeal Duck",
         "kort": "Duck",
         "teaser": "Same jobb, men den sit på kjøleskapet og ser deg i auga.",
-        "pris": "$22.99",
+        "pris": "$24.99",
         "bilete": [
             ("duck-1", "FreshSeal Duck, a duck-shaped bag sealer"),
             ("duck-2", "The Duck sealing a snack bag"),
@@ -107,7 +107,7 @@ PRODUKT = [
             ("duck-4", "The Duck, open and closed"),
             ("duck-5", "How to use the Duck, step by step"),
         ],
-        "bundlar": [("1", "$22.99", None, None, "1 Duck")],
+        "bundlar": [("1", "$24.99", None, None, "1 Duck")],
         "intro": "It is a duck. It is also a perfectly good bag sealer with a cutter, a magnet and "
                  "USB charging. Both things are true at once, and that is the point.",
         "punkt": [

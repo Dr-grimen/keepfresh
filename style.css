@@ -382,3 +382,74 @@ table.ship th { font-size: 12px; letter-spacing: 0.08em; text-transform: upperca
   .promise-grid { grid-template-columns: 1fr; gap: 28px; }
   .promise { padding: 44px 0 56px; }
 }
+
+/* ---------- bundles ---------- */
+
+.bundles {
+  display: grid;
+  gap: 10px;
+  margin: 4px 0 18px;
+}
+
+.bundle {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 15px 18px;
+  border: 1.5px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition: border-color .15s, background .15s;
+}
+
+.bundle:hover { border-color: #bdbab0; }
+.bundle[aria-current="true"] { border-color: var(--ink); background: #fdfdfb; }
+
+.bundle .b-name { font-weight: 600; font-size: 15px; }
+.bundle .b-price { font-size: 15px; font-variant-numeric: tabular-nums; }
+.bundle .b-price s { color: var(--ink-soft); margin-left: 6px; font-size: 13.5px; }
+
+.bundle .b-tag {
+  position: absolute;
+  top: -9px;
+  left: 14px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 10.5px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+/* ---------- sourced reviews ---------- */
+
+.reviews-src {
+  max-width: 720px;
+  margin: 52px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+
+.reviews-src h3 {
+  font-size: 19px;
+  margin: 0 0 8px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  text-align: center;
+}
+
+.reviews-src .src-note {
+  color: var(--ink-soft);
+  font-size: 13.5px;
+  margin: 0 auto 8px;
+  text-align: center;
+  max-width: 600px;
+}

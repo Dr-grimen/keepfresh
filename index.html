@@ -36,29 +36,43 @@
 
     <div>
       <div class="gallery-main">
-        <img id="mainImage" src="bilder/produkt-2.webp" alt="Mini Sealer in white">
+        <img id="mainImage" src="bilder/produkt-1.webp" alt="Mini Sealer with USB-C charging cable">
       </div>
       <div class="thumbs" id="thumbs">
-        <button aria-current="true"><img src="bilder/produkt-2.webp" alt="Mini Sealer in white"></button>
-        <button><img src="bilder/produkt-3.webp" alt="Mini Sealer, closed and open"></button>
-        <button><img src="bilder/produkt-1.webp" alt="Sealing a snack bag"></button>
-        <button><img src="bilder/produkt-4.webp" alt="Size: 9.5 x 3.5 x 3.5 cm"></button>
-        <button><img src="bilder/produkt-6.webp" alt="Mini Sealer held in one hand"></button>
-        <button><img src="bilder/produkt-5.webp" alt="Opening a sealed bag"></button>
+        <button aria-current="true"><img src="bilder/produkt-1.webp" alt="Mini Sealer and charging cable"></button>
+        <button><img src="bilder/produkt-2.webp" alt="Mini Sealer, side view"></button>
+        <button><img src="bilder/produkt-3.webp" alt="Sealer, cutter, magnetic base and charging port"></button>
+        <button><img src="bilder/produkt-4.webp" alt="Mini Sealer held on a fridge door by its magnet"></button>
+        <button><img src="bilder/produkt-5.webp" alt="Sealing a coffee bag"></button>
       </div>
     </div>
 
     <div>
       <h1>Mini Sealer</h1>
-      <div class="price">$24.99</div>
+      <div class="price" id="price">$24.99</div>
+
+      <div class="bundles" id="bundles">
+        <button class="bundle" data-pack="1" data-price="$24.99" aria-current="true">
+          <span class="b-name">1 Sealer</span>
+          <span class="b-price">$24.99</span>
+        </button>
+        <button class="bundle" data-pack="2" data-price="$39.99" data-save="Save $10">
+          <span class="b-name">2 Sealers</span>
+          <span class="b-price">$39.99 <s>$49.98</s></span>
+          <span class="b-tag">Most popular</span>
+        </button>
+        <button class="bundle" data-pack="3" data-price="$54.99" data-save="Save $20">
+          <span class="b-name">3 Sealers</span>
+          <span class="b-price">$54.99 <s>$74.97</s></span>
+          <span class="b-tag">Best value</span>
+        </button>
+      </div>
 
       <!-- ================================================================
-           STRIPE: bytt lenka under med din eigen Payment Link frå Stripe.
-           Den ser slik ut:  https://buy.stripe.com/xxxxxxxxxxxx
-           Dette er den EINASTE staden du treng å endre noko.
+           STRIPE: lag TRE Payment Links (1, 2 og 3 stk) og lim dei inn
+           under. Det er den einaste staden du treng å endre noko.
            ================================================================ -->
-      <a class="btn-buy" id="buyButton"
-         href="https://buy.stripe.com/DIN-LENKE-HER">Pay Now</a>
+      <a class="btn-buy" id="buyButton" href="https://buy.stripe.com/LENKE-1-STK">Pay Now</a>
 
       <div class="assurance">
         <div><span class="ico">🚚</span>Free Shipping</div>
@@ -74,10 +88,11 @@
              back, no hard feelings.</p>
           <p><strong>Here's what you're getting:</strong></p>
           <ul>
-            <li>An airtight heat seal on any plastic bag in one quick pass</li>
-            <li>Compact at 9.5 × 3.5 × 3.5 cm — it lives in a drawer, not on your counter</li>
-            <li>Runs on 2 AA batteries, so there is no cable and no charging (batteries not included)</li>
-            <li>A straightforward tool that does exactly what it promises</li>
+            <li>Seals any plastic bag airtight in one pass — chips, coffee, pasta, frozen food</li>
+            <li>Built-in cutter opens the bag again cleanly, so it does both jobs</li>
+            <li>USB-C rechargeable — no batteries to buy, and no cable left plugged in</li>
+            <li>Magnetic base: it lives on the fridge door instead of lost in a drawer</li>
+            <li>Lit power switch so you can see when it is on</li>
           </ul>
           <p>For $24.99, the only real risk is leaving food to go stale without one.</p>
         </div>
@@ -101,8 +116,8 @@
         <div class="body">
           <ul>
             <li>Wipe the sealing strip clean when it is cool — never rinse the unit</li>
+            <li>Charge with the supplied USB-C cable; a full charge lasts weeks of normal use</li>
             <li>Store in a cool, dry place away from direct sunlight</li>
-            <li>Remove the batteries if you are putting it away for a long period</li>
           </ul>
         </div>
       </details>
@@ -132,21 +147,37 @@
       </div>
     </div>
 
-    <!-- ==================================================================
-         EKTE OMTALAR: når ein kunde faktisk har kjøpt og sagt noko fint,
-         kopier blokka under, fyll inn, og lim den inn her. Berre ekte.
+    <div class="reviews-src">
+      <h3>What buyers say about this sealer</h3>
+      <p class="src-note">These reviews are from verified purchases of this exact model on our
+         supplier's AliExpress listing — 4.9 out of 5 from 653 reviews. They are not FreshSeal
+         customers, because FreshSeal is new. We show them so you can judge the product itself.</p>
 
-         <article class="review">
-           <div class="stars">★★★★★</div>
-           <h4>Overskrifta til kunden</h4>
-           <p>Det kunden faktisk skreiv.</p>
-           <div class="who">Fornamn E. · Verified order · Land</div>
-         </article>
-         ================================================================== -->
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Very practical, with an illuminated on/off switch for safety. It has a small blade to open
+           packages by turning it, or to cut excess material when sealing in the normal position."</p>
+        <div class="who">E***r · verified purchase · 8 January 2026 · white</div>
+      </article>
+
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>"The truth is that it works quite well, and the fact that it is rechargeable and has a
+           magnetic base lets you keep it in your kitchen without any problem."</p>
+        <div class="who">Verified purchase · 6 December 2025</div>
+      </article>
+
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Better than the cheaper versions. It seals well and heats up immediately after turning on,
+           which makes securing the packaging easier and more efficient."</p>
+        <div class="who">I***k · verified purchase · 1 November 2025</div>
+      </article>
+    </div>
 
     <div class="reviews-empty">
-      <p>No customer reviews yet — this shop is new. Every review that appears here will come from
-         someone who actually ordered and actually wrote it.</p>
+      <p>No FreshSeal reviews yet — we have only just opened. Yours would be the first, and it will
+         appear here exactly as you write it.</p>
     </div>
   </div>
 </section>
@@ -178,6 +209,26 @@
 </footer>
 
 <script>
+  // ---- Stripe Payment Links: éi per pakkestorleik ----
+  var STRIPE = {
+    1: "https://buy.stripe.com/LENKE-1-STK",
+    2: "https://buy.stripe.com/LENKE-2-STK",
+    3: "https://buy.stripe.com/LENKE-3-STK"
+  };
+
+  var bundles = document.getElementById('bundles');
+  var buy = document.getElementById('buyButton');
+  var priceEl = document.getElementById('price');
+  bundles.addEventListener('click', function (e) {
+    var btn = e.target.closest('.bundle');
+    if (!btn) return;
+    Array.prototype.forEach.call(bundles.children, function (b) {
+      b.setAttribute('aria-current', b === btn ? 'true' : 'false');
+    });
+    priceEl.textContent = btn.dataset.price;
+    buy.href = STRIPE[btn.dataset.pack];
+  });
+
   var thumbs = document.getElementById('thumbs');
   var main = document.getElementById('mainImage');
   thumbs.addEventListener('click', function (e) {

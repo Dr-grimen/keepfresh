@@ -13,7 +13,7 @@ PRODUKT = [
         "slug": "mini-sealer",
         "namn": "FreshSeal Mini Sealer",
         "kort": "Mini Sealer",
-        "teaser": "Oppladbar, med kutter og magnet. Flaggskipet.",
+        "teaser": "Rechargeable, with a cutter and a magnet. The flagship.",
         "pris": "$24.99",
         "bilete": [
             ("mini-1", "FreshSeal Mini Sealer in white, with its USB-C cable"),
@@ -58,7 +58,7 @@ PRODUKT = [
         "slug": "classic",
         "namn": "FreshSeal Classic",
         "kort": "Classic",
-        "teaser": "Den enkle. Over 100 000 selde.",
+        "teaser": "The plain one. Over 100,000 sold.",
         "pris": "$24.99",
         "bilete": [
             ("classic-1", "FreshSeal Classic in white"),
@@ -99,7 +99,7 @@ PRODUKT = [
         "slug": "duck",
         "namn": "FreshSeal Duck",
         "kort": "Duck",
-        "teaser": "Same jobb, men den sit på kjøleskapet og ser deg i auga.",
+        "teaser": "Same job, except it sits on your fridge and looks you in the eye.",
         "pris": "$24.99",
         "bilete": [
             ("duck-1", "FreshSeal Duck, a duck-shaped bag sealer"),

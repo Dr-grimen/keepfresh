@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini Sealer | FreshSeal</title>
+<meta name="description" content="The mini bag sealer that keeps your food fresh, cuts waste, and saves you money. Free worldwide shipping, 30-day returns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="announce">Free worldwide shipping on all orders</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">FreshSeal<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">Mini Bag Sealer</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumb">
+  <div class="wrap">
+    <a href="index.html">Home</a><span>›</span>Mini Sealer
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="product">
+
+    <div>
+      <div class="gallery-main">
+        <img id="mainImage" src="bilder/produkt-2.webp" alt="Mini Sealer in white">
+      </div>
+      <div class="thumbs" id="thumbs">
+        <button aria-current="true"><img src="bilder/produkt-2.webp" alt="Mini Sealer in white"></button>
+        <button><img src="bilder/produkt-3.webp" alt="Mini Sealer, closed and open"></button>
+        <button><img src="bilder/produkt-1.webp" alt="Sealing a snack bag"></button>
+        <button><img src="bilder/produkt-4.webp" alt="Size: 9.5 x 3.5 x 3.5 cm"></button>
+        <button><img src="bilder/produkt-6.webp" alt="Mini Sealer held in one hand"></button>
+        <button><img src="bilder/produkt-5.webp" alt="Opening a sealed bag"></button>
+      </div>
+    </div>
+
+    <div>
+      <h1>Mini Sealer</h1>
+      <div class="price">$24.99</div>
+
+      <!-- ================================================================
+           STRIPE: bytt lenka under med din eigen Payment Link frå Stripe.
+           Den ser slik ut:  https://buy.stripe.com/xxxxxxxxxxxx
+           Dette er den EINASTE staden du treng å endre noko.
+           ================================================================ -->
+      <a class="btn-buy" id="buyButton"
+         href="https://buy.stripe.com/DIN-LENKE-HER">Pay Now</a>
+
+      <div class="assurance">
+        <div><span class="ico">🚚</span>Free Shipping</div>
+        <div><span class="ico">↩︎</span>30-Day Returns</div>
+        <div><span class="ico">🔒</span>Secure Checkout</div>
+      </div>
+
+      <details class="panel" open>
+        <summary>Description</summary>
+        <div class="body">
+          <p>Not sure a mini sealer will actually earn a spot in your kitchen? We get it. That's why your
+             purchase is backed by our hassle-free return policy — if it doesn't work for you, send it
+             back, no hard feelings.</p>
+          <p><strong>Here's what you're getting:</strong></p>
+          <ul>
+            <li>An airtight heat seal on any plastic bag in one quick pass</li>
+            <li>Compact at 9.5 × 3.5 × 3.5 cm — it lives in a drawer, not on your counter</li>
+            <li>Runs on 2 AA batteries, so there is no cable and no charging (batteries not included)</li>
+            <li>A straightforward tool that does exactly what it promises</li>
+          </ul>
+          <p>For $24.99, the only real risk is leaving food to go stale without one.</p>
+        </div>
+      </details>
+
+      <details class="panel">
+        <summary>Shipping &amp; Returns</summary>
+        <div class="body">
+          <ul>
+            <li>Free worldwide shipping on all orders</li>
+            <li>Delivery in 7–14 business days with tracking</li>
+            <li>Free returns within 30 days of delivery</li>
+            <li>Items must be unused and in original packaging</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="panel">
+        <summary>Care Instructions</summary>
+        <div class="body">
+          <ul>
+            <li>Wipe the sealing strip clean when it is cool — never rinse the unit</li>
+            <li>Store in a cool, dry place away from direct sunlight</li>
+            <li>Remove the batteries if you are putting it away for a long period</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</main>
+
+<section class="reviews">
+  <div class="wrap">
+    <h2>Customer Reviews</h2>
+    <p>No reviews yet. Every review shown here will come from a real, verified order — so the first one
+       is waiting for you.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">FreshSeal<span>.</span></a>
+        <p>The mini bag sealer that keeps your food fresh, cuts waste, and saves you money — shipped worldwide.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 FreshSeal. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  var thumbs = document.getElementById('thumbs');
+  var main = document.getElementById('mainImage');
+  thumbs.addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    main.src = btn.querySelector('img').src;
+    Array.prototype.forEach.call(thumbs.children, function (b) {
+      b.setAttribute('aria-current', b === btn ? 'true' : 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -6,7 +6,7 @@ Alt innhald ligg i PRODUKT under. Endrar du pris eller tekst, endrar du her
 og køyrer skriptet på nytt — då blir alle sidene oppdaterte likt.
 """
 
-V = "3"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
+V = "4"  # versjonsnummer på css/bilete, auk denne når du endrar bilete
 
 PRODUKT = [
     {
@@ -16,11 +16,10 @@ PRODUKT = [
         "teaser": "Oppladbar, med kutter og magnet. Flaggskipet.",
         "pris": "$24.99",
         "bilete": [
-            ("mini-1", "FreshSeal Mini Sealer in white"),
-            ("mini-2", "Mini Sealer with USB-C charging cable"),
-            ("mini-3", "Sealer, cutter, magnetic base and charging port"),
-            ("mini-4", "Mini Sealer held on a fridge door by its magnet"),
-            ("mini-5", "Sealing a coffee bag"),
+            ("mini-1", "FreshSeal Mini Sealer in white, with its USB-C cable"),
+            ("mini-2", "Sealing a coffee bag with the Mini Sealer"),
+            ("mini-3", "The Mini Sealer held on a fridge door by its magnet"),
+            ("mini-4", "Cutter, sealer, magnetic base and charging port"),
         ],
         "bundlar": [
             ("1", "$24.99", None, None, "1 Sealer"),
@@ -64,12 +63,15 @@ PRODUKT = [
         "pris": "$24.99",
         "bilete": [
             ("classic-1", "FreshSeal Classic in white"),
-            ("classic-2", "Classic sealing a bag by hand"),
-            ("classic-3", "Sealing a freezer bag"),
-            ("classic-4", "Classic slipped into a coat pocket"),
-            ("classic-5", "Four examples of bags being sealed"),
+            ("classic-2", "Sealing a snack bag by hand"),
+            ("classic-3", "Sealing a freezer bag of vegetables"),
+            ("classic-4", "The Classic slipped into a coat pocket"),
         ],
-        "bundlar": [("1", "$24.99", None, None, "1 Sealer")],
+        "bundlar": [
+            ("1", "$24.99", None, None, "1 Sealer"),
+            ("2", "$39.99", "$49.98", "Most popular", "2 Sealers"),
+            ("3", "$54.99", "$74.97", "Best value", "3 Sealers"),
+        ],
         "intro": "The plain one. No charging, no extra functions — you press it along the bag and it "
                  "closes airtight. Over 100,000 people have bought this exact model, and it is the "
                  "most proven sealer we sell.",
@@ -102,12 +104,14 @@ PRODUKT = [
         "pris": "$24.99",
         "bilete": [
             ("duck-1", "FreshSeal Duck, a duck-shaped bag sealer"),
-            ("duck-2", "The Duck sealing a snack bag"),
-            ("duck-3", "Four things the Duck can seal"),
-            ("duck-4", "The Duck, open and closed"),
-            ("duck-5", "How to use the Duck, step by step"),
+            ("duck-2", "The Duck resting on a kitchen table"),
+            ("duck-3", "Sealing a bag with the Duck"),
         ],
-        "bundlar": [("1", "$24.99", None, None, "1 Duck")],
+        "bundlar": [
+            ("1", "$24.99", None, None, "1 Duck"),
+            ("2", "$39.99", "$49.98", "Most popular", "2 Ducks"),
+            ("3", "$54.99", "$74.97", "Best value", "3 Ducks"),
+        ],
         "intro": "It is a duck. It is also a perfectly good bag sealer with a cutter, a magnet and "
                  "USB charging. Both things are true at once, and that is the point.",
         "punkt": [

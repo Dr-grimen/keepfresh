@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -34,14 +34,12 @@
 
     <div>
       <div class="gallery-main">
-        <img id="mainImage" src="bilder/duck-1.webp?v=3" alt="FreshSeal Duck, a duck-shaped bag sealer">
+        <img id="mainImage" src="bilder/duck-1.webp?v=4" alt="FreshSeal Duck, a duck-shaped bag sealer">
       </div>
       <div class="thumbs" id="thumbs">
-        <button aria-current="true"><img src="bilder/duck-1.webp?v=3" alt="FreshSeal Duck, a duck-shaped bag sealer"></button>
-        <button><img src="bilder/duck-2.webp?v=3" alt="The Duck sealing a snack bag"></button>
-        <button><img src="bilder/duck-3.webp?v=3" alt="Four things the Duck can seal"></button>
-        <button><img src="bilder/duck-4.webp?v=3" alt="The Duck, open and closed"></button>
-        <button><img src="bilder/duck-5.webp?v=3" alt="How to use the Duck, step by step"></button>
+        <button aria-current="true"><img src="bilder/duck-1.webp?v=4" alt="FreshSeal Duck, a duck-shaped bag sealer"></button>
+        <button><img src="bilder/duck-2.webp?v=4" alt="The Duck resting on a kitchen table"></button>
+        <button><img src="bilder/duck-3.webp?v=4" alt="Sealing a bag with the Duck"></button>
       </div>
     </div>
 
@@ -53,6 +51,16 @@
         <button class="bundle" data-pack="1" data-price="$24.99" aria-current="true">
           <span class="b-name">1 Duck</span>
           <span class="b-price">$24.99</span>
+        </button>
+        <button class="bundle" data-pack="2" data-price="$39.99">
+          <span class="b-name">2 Ducks</span>
+          <span class="b-price">$39.99 <s>$49.98</s></span>
+          <span class="b-tag">Most popular</span>
+        </button>
+        <button class="bundle" data-pack="3" data-price="$54.99">
+          <span class="b-name">3 Ducks</span>
+          <span class="b-price">$54.99 <s>$74.97</s></span>
+          <span class="b-tag">Best value</span>
         </button>
       </div>
 
@@ -186,7 +194,9 @@
 
 <script>
   var STRIPE = {
-    1: "https://buy.stripe.com/DUCK-1-STK"
+    1: "https://buy.stripe.com/DUCK-1-STK",
+    2: "https://buy.stripe.com/DUCK-2-STK",
+    3: "https://buy.stripe.com/DUCK-3-STK"
   };
 
   var bundles = document.getElementById('bundles');

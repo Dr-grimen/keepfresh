@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy | Unknot</title>
+<meta name="description" content="How Unknot handles your personal data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<div class="announce">Free shipping worldwide · 30-day returns</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Unknot<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">Massager</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page">
+    <div class="eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+
+    <p class="lead">Short version: we collect what we need to send you a massager, we share your
+       address with the warehouse that ships it, and we do not sell your data to anyone. The long
+       version follows.</p>
+
+    <h2>Who is responsible</h2>
+    <p>Unknot is operated by <strong>Indokalo AS</strong>, Nygardsvegen 36, 5419 Fitjar, Norway.
+       We are the data controller for the information described here. Reach us at
+       <a href="mailto:hello@unknot.store">hello@unknot.store</a>.</p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Order details</strong> — your name, delivery address, email address and phone
+          number if you give one</li>
+      <li><strong>Payment confirmation</strong> — the amount, the currency and the last four digits
+          of your card</li>
+    </ul>
+    <p>We never see or store your full card number. Payment is handled entirely by Stripe.</p>
+
+    <h2>Why we collect it, and on what basis</h2>
+    <p>To take your order, get the massager to your door, answer you if you write, and keep the
+       accounts our law requires. The legal basis is performance of a contract with you (GDPR
+       Article 6(1)(b)), and for the bookkeeping, a legal obligation (Article 6(1)(c)).</p>
+
+    <h2>Who we share it with</h2>
+    <p>Three parties, and no others:</p>
+    <ul>
+      <li><strong>Stripe</strong> — processes the payment. Stripe is our payment processor and
+          holds your card details, not us.</li>
+      <li><strong>Our supplier and their carrier</strong> — we pass your name, address and phone
+          number to the warehouse that packs and ships your order. <strong>That warehouse is in
+          China.</strong> This is a transfer outside the EEA, and it is the only way an order can
+          physically reach you. We send them nothing beyond what the parcel needs.</li>
+      <li><strong>Our accountant</strong> — sees order totals as part of the books, as Norwegian
+          law requires.</li>
+    </ul>
+    <p>We do not sell your data, rent it, or hand it to advertisers.</p>
+
+    <h2>How long we keep it</h2>
+    <p>Order and accounting records are kept five years from the end of the financial year, because
+       the Norwegian Bookkeeping Act says so. Emails you send us are deleted once the matter is
+       settled and there is no reason to keep them.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask us for a copy of what we hold about you, ask us to correct it, ask us to delete
+       it, or object to how we use it. Write to
+       <a href="mailto:hello@unknot.store">hello@unknot.store</a> and we will answer within 30 days.</p>
+    <p>If you think we have handled your data badly, you can complain to the Norwegian Data
+       Protection Authority (Datatilsynet), or to the supervisory authority in your own country.</p>
+
+    <h2>Cookies</h2>
+    <p>This site sets no tracking or advertising cookies. When you go to pay, Stripe sets what it
+       needs to run the checkout securely — that happens on Stripe's page, under Stripe's own
+       privacy policy.</p>
+
+    <p class="updated">Last updated 6 September 2026.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">Unknot<span>.</span></a>
+        <p>A shoulder massager that kneads instead of buzzes — free shipping worldwide,
+           30-day returns.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Unknot. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  var thumbs = document.getElementById('thumbs');
+  if (thumbs) {
+    var main = document.getElementById('mainImage');
+    thumbs.addEventListener('click', function (e) {
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      main.src = btn.querySelector('img').src;
+      Array.prototype.forEach.call(thumbs.children, function (b) {
+        b.setAttribute('aria-current', b === btn ? 'true' : 'false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

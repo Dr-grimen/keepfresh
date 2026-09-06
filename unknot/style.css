@@ -631,3 +631,9 @@ table.ship th { font-size: 12px; letter-spacing: 0.08em; text-transform: upperca
   .product > div:first-child { position: static; }
   .review-grid { grid-template-columns: 1fr; }
 }
+
+
+/* ---------- juridiske sider ---------- */
+.page .lead { font-size: 17px; color: var(--ink); border-left: 3px solid var(--sage); padding-left: 16px; }
+.page .updated { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 13.5px; }
+.page strong { color: var(--ink); }

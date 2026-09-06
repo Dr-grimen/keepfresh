@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service | Unknot</title>
+<meta name="description" content="The terms you agree to when ordering from Unknot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<div class="announce">Free shipping worldwide · 30-day returns</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Unknot<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">Massager</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page">
+    <div class="eyebrow">Legal</div>
+    <h1>Terms of Service</h1>
+
+    <p class="lead">These terms apply when you order from Unknot. They are written to be read, not
+       to hide things.</p>
+
+    <h2>Who you are buying from</h2>
+    <p><strong>Indokalo AS</strong>, Nygardsvegen 36, 5419 Fitjar, Norway, trading as Unknot.
+       Contact: <a href="mailto:hello@unknot.store">hello@unknot.store</a>.</p>
+
+    <h2>Prices and payment</h2>
+    <p>Prices are shown in US dollars and include nothing hidden. Your bank may convert to your own
+       currency at its own rate. Payment is taken by Stripe when you place the order. Depending on
+       where you live, customs or import duties may be charged on delivery — those are set by your
+       country, not by us, and we cannot pay them for you.</p>
+
+    <h2>Shipping</h2>
+    <p>Orders are processed within 1–2 business days and arrive in <strong>8–14 days</strong> with
+       tracking. Your order ships directly from our supplier's warehouse, which is why it takes
+       longer than a parcel from a shop down the road, and why it costs what it costs.</p>
+    <p>If your parcel does not arrive, is damaged, or we cannot deliver to your address, you get a
+       full refund.</p>
+
+    <h2>Your right to change your mind</h2>
+    <p>If you are a consumer in the EU, EEA or United Kingdom, you have a statutory right to
+       withdraw from the purchase within <strong>14 days</strong> of receiving it, without giving a
+       reason.</p>
+    <p><strong>We give you 30 days instead.</strong> Write to us within 30 days of delivery, send
+       the massager back unused and in its original packaging, and we refund you in full. Tell us
+       first and we will give you the return address.</p>
+
+    <h2>If something is wrong with it</h2>
+    <p>You have the rights the law gives you. Under Norwegian consumer law that means a complaint
+       period of two years, and five years for goods meant to last significantly longer. If the
+       massager is faulty, write to us and we will sort it — repair, replacement or refund.</p>
+
+    <h2>What this product is, and is not</h2>
+    <p>Unknot is a massager for relaxation and comfort. <strong>It is not a medical device.</strong>
+       It is not intended to diagnose, treat, cure or prevent anything. If you are pregnant, have a
+       pacemaker or other implanted device, or have any condition affecting your neck, back or
+       circulation, ask your doctor before using it.</p>
+
+    <h2>Disputes</h2>
+    <p>Write to us first — most things are settled in one email. If we cannot agree, consumers in
+       Norway can bring the matter to Forbrukertilsynet, and consumers in the EU can use the
+       European Commission's online dispute resolution platform. These terms are governed by
+       Norwegian law.</p>
+
+    <p class="updated">Last updated 6 September 2026.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">Unknot<span>.</span></a>
+        <p>A shoulder massager that kneads instead of buzzes — free shipping worldwide,
+           30-day returns.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Unknot. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  var thumbs = document.getElementById('thumbs');
+  if (thumbs) {
+    var main = document.getElementById('mainImage');
+    thumbs.addEventListener('click', function (e) {
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      main.src = btn.querySelector('img').src;
+      Array.prototype.forEach.call(thumbs.children, function (b) {
+        b.setAttribute('aria-current', b === btn ? 'true' : 'false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

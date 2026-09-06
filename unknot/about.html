@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Unknot</title>
+<meta name="description" content="Why Unknot exists.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<div class="announce">Free shipping worldwide · 30-day returns</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Unknot<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">Massager</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page">
+    <div class="eyebrow">Our story</div>
+    <h1>About Us</h1>
+
+    <p>Unknot sells one thing: a shoulder massager that kneads instead of buzzing.</p>
+
+    <h2>Why only one product</h2>
+    <p>Most massage gadgets vibrate. Vibration is easy to build and easy to sell, and it does
+       very little for shoulders that have been hunched over a desk since morning. The mechanism
+       that actually helps is kneading — something pressing, rolling and letting go, the way
+       thumbs do.</p>
+    <p>So we picked the one device we could find that does that properly, and we sell that.
+       When something better comes along, we will sell that instead.</p>
+
+    <h2>How we work</h2>
+    <p>We ship worldwide from our supplier's warehouse, which is why delivery takes 8–14 days
+       rather than two. In exchange, the massager costs a fraction of what the same mechanism
+       costs on a shop shelf.</p>
+    <p>We would rather tell you that plainly than pretend there is a warehouse round the corner.</p>
+
+    <h2>Straight answers</h2>
+    <p>Unknot is a massager for relaxation and comfort. It is not a medical device, and we will
+       not tell you it fixes anything. If something hurts in a way that worries you, see a doctor —
+       not a gadget shop.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">Unknot<span>.</span></a>
+        <p>A shoulder massager that kneads instead of buzzes — free shipping worldwide,
+           30-day returns.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Unknot. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  var thumbs = document.getElementById('thumbs');
+  if (thumbs) {
+    var main = document.getElementById('mainImage');
+    thumbs.addEventListener('click', function (e) {
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      main.src = btn.querySelector('img').src;
+      Array.prototype.forEach.call(thumbs.children, function (b) {
+        b.setAttribute('aria-current', b === btn ? 'true' : 'false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

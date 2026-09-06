@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ | Unknot</title>
+<meta name="description" content="Questions about the Unknot shoulder massager.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<div class="announce">Free shipping worldwide · 30-day returns</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Unknot<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">Massager</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page">
+    <div class="eyebrow">Support</div>
+    <h1>Frequently Asked Questions</h1>
+    <div class="qa"><h3>How long does shipping take?</h3><p>Orders are processed within 1–2 business days and arrive in 8–14 days with tracking. You get the tracking number by email as soon as the parcel leaves.</p></div>
+    <div class="qa"><h3>Do you ship to my country?</h3><p>We ship free to Europe, the United States, Canada, Australia and New Zealand. If your country is not offered at checkout, write to us and we will tell you honestly whether we can reach you.</p></div>
+    <div class="qa"><h3>How does it charge?</h3><p>Over USB-C, with the cable in the box. A full charge lasts roughly a week of daily use.</p></div>
+    <div class="qa"><h3>Is it heavy?</h3><p>It sits across your shoulders rather than hanging from your neck, so the weight spreads. Buyers describe it as noticeable when you pick it up and unnoticeable once it is on.</p></div>
+    <div class="qa"><h3>Can I use it while doing something else?</h3><p>That is the point of the strap. It holds the massager in place so both hands stay free.</p></div>
+    <div class="qa"><h3>Is this a medical device?</h3><p>No. It is a massager for relaxation and comfort. It is not intended to treat, diagnose or prevent any condition. If you have a medical concern, ask your doctor rather than us.</p></div>
+    <div class="qa"><h3>What if it does not suit me?</h3><p>Send it back within 30 days of delivery and we refund you in full.</p></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">Unknot<span>.</span></a>
+        <p>A shoulder massager that kneads instead of buzzes — free shipping worldwide,
+           30-day returns.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Unknot. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  var thumbs = document.getElementById('thumbs');
+  if (thumbs) {
+    var main = document.getElementById('mainImage');
+    thumbs.addEventListener('click', function (e) {
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      main.src = btn.querySelector('img').src;
+      Array.prototype.forEach.call(thumbs.children, function (b) {
+        b.setAttribute('aria-current', b === btn ? 'true' : 'false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

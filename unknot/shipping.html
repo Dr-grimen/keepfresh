@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shipping & Returns | Unknot</title>
+<meta name="description" content="Free worldwide shipping, 30-day returns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<div class="announce">Free shipping worldwide · 30-day returns</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Unknot<span>.</span></a>
+    <nav class="nav">
+      <a href="index.html">Massager</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page">
+    
+    <h1>Shipping & Returns</h1>
+
+    <h2>Shipping</h2>
+    <p>Free shipping on every order, worldwide, with no minimum. Orders are processed within
+       1–2 business days.</p>
+    <table class="ship">
+      <tr><th>Method</th><th>Delivery time</th><th>Cost</th></tr>
+      <tr><td>Free worldwide shipping</td><td>8–14 days</td><td>Free</td></tr>
+    </table>
+    <p>Every order includes tracking, sent to your email once the parcel is on its way. Tracking
+       can take a few days to start updating — that is normal and not a sign anything is wrong.</p>
+
+    <h2>Returns</h2>
+    <p>If the massager is not for you, send it back within 30 days of delivery for a full refund.</p>
+    <ul>
+      <li>Items must be unused and in their original packaging</li>
+      <li>Write to us first and we will tell you where to send it</li>
+      <li>Refunds are processed within 5–7 business days of the parcel arriving back</li>
+    </ul>
+
+    <h2>If your parcel does not arrive</h2>
+    <p>You get your money back. No argument, no proof required beyond the tracking we both
+       can see.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">Unknot<span>.</span></a>
+        <p>A shoulder massager that kneads instead of buzzes — free shipping worldwide,
+           30-day returns.</p>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping.html">Shipping &amp; Returns</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Unknot. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  var thumbs = document.getElementById('thumbs');
+  if (thumbs) {
+    var main = document.getElementById('mainImage');
+    thumbs.addEventListener('click', function (e) {
+      var btn = e.target.closest('button');
+      if (!btn) return;
+      main.src = btn.querySelector('img').src;
+      Array.prototype.forEach.call(thumbs.children, function (b) {
+        b.setAttribute('aria-current', b === btn ? 'true' : 'false');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
